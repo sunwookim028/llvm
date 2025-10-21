@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "LLVM week unambitious task. Finding floating-point division instructions."
+echo "LLVM week unambitious task. Finding floating-point instructions."
 
 # Change to the build directory
 cd /Users/sunwookim028/llvm/llvm-pass-skeleton/build || exit 1
@@ -12,4 +12,4 @@ make || exit 1
 
 # Compile with clang using the pass
 echo "Compiling with LLVM pass..."
-/opt/homebrew/opt/llvm/bin/clang -fpass-plugin=skeleton/SkeletonPass.dylib ../../test/main.cpp
+/opt/homebrew/opt/llvm/bin/clang -fpass-plugin=skeleton/SkeletonPass.dylib -O0 ../../test/main.cpp

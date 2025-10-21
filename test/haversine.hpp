@@ -24,6 +24,7 @@ double haversine(
     double longitude_delta_in_radians = (second_longitude - first_longitude) * DEGREES_TO_RADIANS;
     
     // the square of half the chord length between the points
+    double temp = latitude_delta_in_radians * latitude_delta_in_radians + latitude_delta_in_radians;
     double a = sin(latitude_delta_in_radians / 2) * sin(latitude_delta_in_radians / 2) + cos(first_latitude_in_radians) * cos(second_latitude_in_radians) * sin(longitude_delta_in_radians / 2) * sin(longitude_delta_in_radians / 2);
     
     // angular distance in radians

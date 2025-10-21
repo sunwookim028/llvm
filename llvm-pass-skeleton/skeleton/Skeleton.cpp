@@ -34,7 +34,8 @@ struct SkeletonPass : public PassInfoMixin<SkeletonPass> {
                             errs() << "Found a floating point multiplication: " << *op << "\n";
                             continue;
                         }
-                    }
+                    } 
+                    errs() << "Visiting instruction: " << I << "\n";
                     /*
                     if (auto *op = dyn_cast<BinaryOperator>(&I)) {
                         //errs() << "I saw a binary operator: " << *op << "\n";
