@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "LLVM week unambitious task. Finding floating-point division instructions."
+echo "LLVM week unambitious task. Finding floating-point instructions."
 
 # Change to the build directory
 cd /Users/sunwookim028/llvm/llvm-pass-skeleton/build || exit 1
