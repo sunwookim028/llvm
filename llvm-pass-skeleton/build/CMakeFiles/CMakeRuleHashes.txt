@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+df382574f587aa98faf76f2753a5aa8d skeleton/CMakeFiles/install-SkeletonPass
+71969df9f56c668a171a8b3fe81dcb72 skeleton/CMakeFiles/install-SkeletonPass-stripped
